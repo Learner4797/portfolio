@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
+
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='spinner-wrapper'>
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>    let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+        window.addEventListener('load', function () {
+            // spinnerWrapper.style.display = 'none';
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        });</script>
+
+
+    <div class="section1">
+        <nav id="navbar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="profimg"><img src="images/avatar.jpg" alt="avatar"></div>
+                <a href="#about"onclick="closeNav()"><span class="material-icons">info</span>&nbsp;About</a>
+                <a href="#skills"onclick="closeNav()"><span class="material-icons">psychology</span>&nbsp;Skills</a>
+                <a href="#projects"onclick="closeNav()"><span class="material-icons">attachment</span>&nbsp;Projects</a>
+                <a href="#"onclick="closeNav()"><i class="fa fa-instagram" style="background-image: linear-gradient(#405DE6,#5851D8,#833AB4,#E1306C,#FD1D1D,#F77737,#FFFFFF); border-radius: 100%;"></i>&nbsp;Instagram</a>
+                <a href="#"onclick="closeNav()"><i class="fa fa-facebook" style="background-image: linear-gradient(#3b5998,#8b9dc3); border-radius: 5px;"></i>&nbsp;Facebook</a></p>
+              </div>
+              <span onclick="openNav()" class="menu"><span class="material-icons" style="cursor: pointer;">menu</span></span>
+        </nav>
+        <div class="profileimg"><img src="images/avatar.jpg" alt="avatar"></div><br><br>
+        <div class="name"><h1 class="start_heading">आशीष <span>सिंह</span></h1></div><br>
+        <div class="work">W E B &nbsp; D E V E L O P E R &nbsp; / &nbsp; C O D I N G</div><br><br>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/ashish-singh-1771091a5/" aria-label="linkedin" class="ld" target="_blank"><i class="fa fa-linkedin fa-3x"></i></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/ash1sh_1hakur10/?hl=en" aria-label="instagram" class="insta" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.facebook.com/profile.php?id=100009849559107" aria-label="facebook" class="fb" target="_blank"><i class="fa fa-facebook-f fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Learner4797" aria-label="github" target="_blank"><i class="fa fa-github fa-3x" class="gh"></i></a>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        </div>
+    </div>
+    <div class="section2" id="about">
+        <p class="heading1" >A B O U T &nbsp; M E</p>
+        <section class="child1">
+            <p style="color: black;"><b style="color: black; font-weight: 800;">Name:</b> Ashish singh</p><br>
+            <div class="contact" style="color: black;">
+                <div><b style="color: black; font-weight: 800;">Contact no.:</b>
+                    <p id="no" class="number">987640720</p><input type="password" id="password" placeholder="Enter password to see no." value="">
+                    <button onclick="myFunction()" id="contact">check</button></div>
+            </div><br>
+            <p style="color: black;"><b style="color: black; font-weight: 800;">Email id:</b> as73653@gmail.com </p><br>
+            <p style="color: black;"><b style="color: black; font-weight: 800;">Website:</b> ________________</p><br>
+            <p style="text-align: justify; color:black;" ><b style="color: black; font-weight: 800;">Address:</b> #4797 maloya colony , Chandigarh </p>
+        </section>
+        <section class="child2">
+            <p>My three major interests and passions are web development , programming and Music, and I believe that there is a creative fusion between all these disciplines. I engage wholeheartedly in these areas both in my school courses and out of school, and hope that I will be able to continue doing so on my chosen course and in the extra-curricular opportunities at university..</p>
+        </section>
+        <div class="mobileview">
+            <p style="color: black;"><b style="color: black; font-weight: 700;">Name:</b> Ashish singh</p>
+            <div class="contact" style="color: black;">  
+            <div><b style="color: black; font-weight: 700;">Contact no.:</b>
+                    <p id="number1" class="number">987640720</p><input type="password" id="password1" placeholder="Enter password to see no." value="">
+                    <button onclick="myFunctions()" id="contact1">check</button></div>
+            </div>
+            <p style="color: black;"><b style="color: black; font-weight: 700;">Email id:</b> as73653@gmail.com </p>
+            <p style="color: black;"><b style="color: black; font-weight: 700;">Website:</b> ________________</p>
+            <p style="text-align: justify; color:black;" ><b style="color: black; font-weight: 700;">Address:</b> #4797 maloya colony , Chandigarh </p>
+            <p style="color: black;font-family: URW Chancery L, cursive; padding: 20px; text-align: justify; margin-top: 30px; font-size: 27px;">My three major interests and passions are web development , programming and Music, and I believe that there is a creative fusion between all these disciplines. I engage wholeheartedly in these areas both in my school courses and out of school, and hope that I will be able to continue doing so on my chosen course and in the extra-curricular opportunities at university..</p>
+        </div>
+    </div>
+    <div class="section3" id="skills">
+        <p class="heading1" >M Y &nbsp; S K I L L S</p>
+        <ul class="grid">
+            <li class="logo-grid"><img src="images/skills/html.png" alt="html"></li>
+            <li class="logo-grid"><img src="images/skills/css.png" alt="css"></li>
+            <li class="logo-grid"><img src="images/skills/javascript.png" alt="javascript"></li>
+            <li class="logo-grid"><img src="images/skills/react-js.png" alt="react"></li>
+            <li class="logo-grid"><img src="images/skills/mongodb.png" alt="mongodb"></li>
+            <li class="logo-grid"><img src="images/skills/expressjs.png" alt="expressjs"></li>
+            <li class="logo-grid"><img src="images/skills/node-js.png" alt="node-js"></li>
+            <li class="logo-grid"><img src="images/skills/git.png" alt="git"></li>
+            <li class="logo-grid"><img src="images/skills/java.png" alt="java"></li>
+            <li class="logo-grid"><img src="images/skills/android.png" alt="android"></li>
+        </ul>
+    </div>
+    <div class="section4" id="projects">
+        <p class="heading1" >PROJECTS</p>
+    </div>
+
+
+
+    <script language="javascript" type="text/javascript" src="app.js"></script>
+</body>
+</html>
